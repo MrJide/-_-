@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Entra jaja </title>
+  <style>
+    .body {
+      background-color: blueviolet;
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title"> quieres ser mi novia </h1>
+  <img src="https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/383157092_122098794800057069_1139022328214305210_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeE31nDS-uCYJqTwwx1uOGaszLKBiX5mSrHMsoGJfmZKsW2YG_Oa0SWDiV9rZZiQ1yEo_rvq-1uuyWwwKz1G7CbO&_nc_ohc=TqZGFvxXMScAX_TpP0v&_nc_ht=scontent.fmxl1-1.fna&oh=00_AfADL_vbqgGcc0nVH7xjmhnYQbn_yZ89CtbcK4q5U8nmgg&oe=65208D8D" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">🌚Si🌚</button>
+  <button id="no">😭No😭</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Ya sabia que dirias que si (dale a aceptar)');
+      alert('😱es broma😱');
+      location.href = 'https://youtu.be/dQw4w9WgXcQ?si=hyr7pwIXG_FPSKB6';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
